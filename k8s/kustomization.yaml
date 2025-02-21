@@ -9,4 +9,4 @@ namespace: spotify
 images:
 - name: humix-spotify-client
   newName: blgianinis/humix-spotify-client
-  newTag: 841f45aa436b88fc44080b4b251033de29c45c71
+  newTag: ad0c13c20a43b1386eb7c17c6f02f43faf3c7f40
