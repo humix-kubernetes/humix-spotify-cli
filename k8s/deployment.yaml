@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: humix-spotify-client
+spec:
+  revisionHistoryLimit: 0
+  selector:
+    matchLabels:
+      app: humix-spotify-client
+  template:
+    metadata:
+      labels:
+        app: humix-spotify-client
+    spec:
+      containers:
+      - name: humix-spotify-client
+        image: humix-spotify-client
+        ports:
+        - containerPort: 8080
+        env:
+        - name: SPOTIFY_CLIENT_ID
+          value: "47d629387eff4cc2a731e7f2c290302e"
+        - name: SPOTIFY_CLIENT_SECRET
+          value: "5bcf17b2ac36460480687f83171004ae"
